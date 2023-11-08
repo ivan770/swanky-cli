@@ -8,6 +8,7 @@ import shell from "shelljs";
 import { Contract } from "../../lib/contract.js";
 import { SwankyCommand } from "../../lib/swankyCommand.js";
 import { ConfigError, FileError, InputError, TestError } from "../../lib/errors.js";
+import { TESTS_PATH } from "../../lib/consts.js";
 
 declare global {
   var contractTypesPath: string; // eslint-disable-line no-var
@@ -43,7 +44,7 @@ export class TestContract extends SwankyCommand<typeof TestContract> {
       ? Object.keys(this.swankyConfig.contracts)
       : [args.contractName];
 
-    const testDir = path.resolve("tests");
+    const testDir = path.resolve(TESTS_PATH);
 
     for (const contractName of contractNames) {
       const contractRecord = this.swankyConfig.contracts[contractName];

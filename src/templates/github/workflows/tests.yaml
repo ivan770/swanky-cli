@@ -63,3 +63,6 @@ jobs:
 
     - name: Test contracts
       run: swanky contract test --all
+
+    - name: Clear build artifacts
+      run: swanky clear

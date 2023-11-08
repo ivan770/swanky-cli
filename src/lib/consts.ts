@@ -4,4 +4,6 @@ export const DEFAULT_SHIDEN_NETWORK_URL = "wss://rpc.shiden.astar.network";
 export const DEFAULT_SHIBUYA_NETWORK_URL = "wss://shibuya.public.blastapi.io";
 
 export const ARTIFACTS_PATH = "artifacts";
+export const TARGET_PATH = "target";
+export const TESTS_PATH = "tests";
 export const TYPED_CONTRACTS_PATH = "typedContracts";

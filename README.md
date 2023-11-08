@@ -200,6 +200,7 @@ USAGE
 * [`swanky account list`](#swanky-account-list)
 * [`swanky account ls`](#swanky-account-ls)
 * [`swanky check`](#swanky-check)
+* [`swanky clear`](#swanky-clear)
 * [`swanky contract compile [CONTRACTNAME]`](#swanky-contract-compile-contractname)
 * [`swanky contract deploy CONTRACTNAME`](#swanky-contract-deploy-contractname)
 * [`swanky contract explain CONTRACTNAME`](#swanky-contract-explain-contractname)
@@ -293,6 +294,23 @@ DESCRIPTION
 ```
 
 _See code: [dist/commands/check/index.ts](https://github.com/AstarNetwork/swanky-cli/blob/v3.1.0-beta.0/dist/commands/check/index.ts)_
+
+## `swanky clear`
+
+Remove build artifacts and cache
+
+```
+USAGE
+  $ swanky clear [-v]
+
+FLAGS
+  -v, --verbose  Display more info in the result logs
+
+DESCRIPTION
+  Remove build artifacts and cache
+```
+
+_See code: [dist/commands/clear/index.ts](https://github.com/AstarNetwork/swanky-cli/blob/v3.1.0-beta.0/dist/commands/clear/index.ts)_
 
 ## `swanky contract compile [CONTRACTNAME]`
 
